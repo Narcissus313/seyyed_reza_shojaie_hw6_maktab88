@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     color: #161616;
-    font-family: sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
 }
@@ -9,6 +9,8 @@
 .container>hr {
     width: 35%;
 }
+
+
 
 h1 {
     font-size: 44px;
@@ -23,7 +25,9 @@ h1 {
     font-size: 14px;
     font-weight: bold;
     margin-right: 2%;
-    padding: 5px 10px;
+    padding: 0px 10px;
+    padding-bottom: 8px;
+    padding-top: 6px;
     text-decoration: none;
 
 }
@@ -34,7 +38,7 @@ h1 {
     cursor: pointer;
 }
 
-#home{
+#home {
     background-color: #2f7eae;
     color: white;
 }
@@ -42,11 +46,11 @@ h1 {
 .sign-up {
     background-color: #5fb854;
     color: white;
+    font-size: 16px;
+    margin-bottom: 5%;
     margin-right: 0;
     margin-top: 5%;
-    margin-bottom: 5%;
     padding: 2% 3%;
-    font-size: 16px;
 }
 
 .container {
@@ -55,6 +59,10 @@ h1 {
     flex-direction: column;
     gap: 2%;
     height: 700px;
+}
+
+.container hr {
+    margin-top: -20px;
 }
 
 .container>div {
@@ -68,6 +76,7 @@ h1 {
     display: flex;
     height: 10%;
     justify-content: space-between;
+    margin-bottom: 1%;
     margin-top: 1%;
 }
 
@@ -79,7 +88,6 @@ h1 {
 
 .title {
     color: #71716e;
-    display: flex;
     font-size: 24px;
     font-weight: bold;
     padding-left: 2%;
@@ -88,28 +96,30 @@ h1 {
 .middle-up {
     align-items: center;
     background-color: #eeeeee;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    height: 40%;
+    height: 38%;
     justify-content: space-around;
     padding: 8% 0%;
 
 }
 
-.middle-up>p{
-    padding: 0 12%;
+.middle-up>p {
+    padding: 0 13%;
 }
 
 .middle-down {
     display: flex;
     gap: 0 5%;
-    height: 38%;
+    height: 44%;
     justify-content: space-between;
     margin-bottom: 2%;
     padding: 0 1%;
 }
 
-.left, .right {
+.left,
+.right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -117,10 +127,17 @@ h1 {
 }
 
 .txt {
+    background-color: rgb(250, 250, 250);
     height: 30%;
     margin-top: 10%;
 }
 
-.footer{
+.footer {
+    color: #7f7e7e;
     font-size: 12px;
+    font-weight: bold;
+}
+
+hr {
+    background-color: #fffffc;
 }
