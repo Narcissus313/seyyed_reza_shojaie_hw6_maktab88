@@ -2,24 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 p {
-    margin-left: 20px;
-    margin-top: 35px;
+    margin-left: 25px;
+    margin-top: 40px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: 800px;
     gap: 5%;
 }
 
 .container>div {
-    width: 60%;
+    width: 50%;
 }
 
 .green {
@@ -30,7 +30,7 @@ p {
 
 .down {
     display: flex;
-    height: 60%;
+    height: 40%;
     gap: 4%;
 
 }
@@ -80,8 +80,7 @@ p {
 .yellow>p,
 .red>p {
     align-self: flex-start;
-    margin-left: 20px;
-    margin-top: -40px;
+    margin-top: -10px;
 }
 
 .white>p {
