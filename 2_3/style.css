@@ -1,9 +1,102 @@
-*{
+body,
+html {
+    box-sizing: border-box;
+    color: white;
+    direction: rtl;
+    font-family: cursive;
+    height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body{
-    background-image: './123217.jpg';
+.bg {
+    background-image: url("./images/123217.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.container {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    height: 40%;
+    width: 350px;
+
+}
+
+.inp {
+    background-color: #28a745;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    height: 12%;
+    width: 80%;
+}
+
+.inp:hover{
+    cursor: pointer;
+}
+
+.container>span {
+    font-size: 20px;
+    margin-top: 9%;
+}
+
+.container p {
+    margin-top: 0px;
+}
+
+.user-box {
+    align-items: center;
+    border: solid;
+    border-radius: 4px;
+    display: flex;
+    height: 10%;
+    justify-content: start;
+    width: 78%;
+}
+
+.user-name{
+    margin-top: 3%;
+}
+
+.user-box div {
+    background: white url(./images/user-icon.png) center no-repeat;
+    background-size: 60% 120%;
+    height: 100%;
+    padding-left: 10%;
+    width: 10%;
+}
+
+.password div {
+    background: white url(./images/lock-icon.png) center no-repeat;
+    background-size: 70% 120%;
+}
+
+.user-box input {
+    border: none;
+    height: 100%;
+    outline: none;
+    width: 100%;
+}
+
+.user-box input:focus::placeholder {
+    color: transparent;
+    direction: ltr;
+}
+
+.user-box input:focus {
+    direction: ltr;
+}
+a{
+    text-decoration: none;
 }
