@@ -9,6 +9,10 @@ html {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .bg {
     background-image: url("./images/123217.jpg");
     background-position: center;
@@ -17,12 +21,12 @@ html {
     display: flex;
     height: 90%;
     justify-content: center;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .container {
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -34,20 +38,20 @@ html {
 
 .inp {
     background-color: #28a745;
-    border-radius: 4px;
     border: none;
+    border-radius: 4px;
     color: white;
     font-size: 20px;
     height: 12%;
     width: 80%;
 }
 
-.inp:hover{
+.inp:hover {
     cursor: pointer;
 }
 
 .container>span {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 9%;
 }
 
@@ -61,25 +65,24 @@ html {
     border-radius: 4px;
     display: flex;
     height: 10%;
-    justify-content: start;
     width: 78%;
 }
 
-.user-name{
+.user-name {
     margin-top: 3%;
 }
 
 .user-box div {
     background: white url(./images/user-icon.png) center no-repeat;
-    background-size: 60% 120%;
+    background-size: 80% 110%;
     height: 100%;
-    padding-left: 10%;
-    width: 10%;
+    padding-left: 2%;
+    width: 15%;
 }
 
 .password div {
     background: white url(./images/lock-icon.png) center no-repeat;
-    background-size: 70% 120%;
+    background-size: 80% 110%;
 }
 
 .user-box input {
@@ -96,7 +99,4 @@ html {
 
 .user-box input:focus {
     direction: ltr;
-}
-a{
-    text-decoration: none;
 }
