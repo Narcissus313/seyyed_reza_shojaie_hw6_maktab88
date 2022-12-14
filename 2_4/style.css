@@ -99,6 +99,8 @@
     display: none;
 }
 
+
+/* For mobiles: */
 .col-1 {
     text-align: center;
     width: 8.33%;
@@ -162,6 +164,7 @@
         display: block;
     }
 
+    /* For small screens: */
     .col-sm-1 {
         width: 8.33%;
     }
@@ -221,11 +224,12 @@
     }
 
     .colors {
+        align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
     }
 
+    /* For medium desktop: */
     .col-md-1 {
         width: 8.33%;
     }
@@ -298,7 +302,7 @@
     }
 
     .col-ld-4 {
-        width: 32%;
+        width: 32.2%;
     }
 
     .col-ld-5 {
