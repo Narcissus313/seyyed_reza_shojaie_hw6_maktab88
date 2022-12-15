@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="shortcut icon" href="#">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rally</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="main">
+        <div class="buttons-div">
+            <button id="btn-start">Start Rally!</button>
+            <button id="btn-clear-console">clear</button>
+        </div>
+    </div>
     <script src="rally.js"></script>
+    <script src="clearScreen.js"></script>
+    <script>
+        let btn_start = document.getElementById("btn-start");
+        btn_start.addEventListener("click", rally);
+        let btn_clear = document.getElementById("btn-clear-console");
+        btn_clear.addEventListener("click", clearScreen);
+    </script>
 </body>
+
 </html>

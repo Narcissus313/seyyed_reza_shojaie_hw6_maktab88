@@ -1,0 +1,3 @@
+function clearScreen() {
+	console.clear();
+}
