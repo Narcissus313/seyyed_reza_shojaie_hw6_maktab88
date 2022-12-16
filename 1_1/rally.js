@@ -1,6 +1,7 @@
 function rally() {
 	let carNumbers = prompt("Enter the number of carNames to start the rally:");
 	if (isNaN(carNumbers) || carNumbers === "0") {
+		console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		console.log("not a valid number!");
 		return;
 	}
