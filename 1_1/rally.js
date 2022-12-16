@@ -1,10 +1,14 @@
 function rally() {
 	let carNumbers = prompt("Enter the number of carNames to start the rally:");
 	if (isNaN(carNumbers) || carNumbers === "0") {
-		console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+		//validation part
+		console.log(
+			"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+		);
 		console.log("not a valid number!");
 		return;
 	}
+
 	carNumbers = +carNumbers;
 	let cars = [];
 
@@ -12,6 +16,7 @@ function rally() {
 		this.name = name;
 		this.position = 0;
 	}
+
 	while (cars.length < carNumbers) {
 		let carName = prompt("Enter the car name:");
 		if (!carName) {
@@ -22,13 +27,14 @@ function rally() {
 	}
 
 	function shuffleArray(array) {
+		//shuffle function for random cars sequence
 		return array
 			.map((value) => ({ value, sort: Math.random() }))
 			.sort((a, b) => a.sort - b.sort)
 			.map(({ value }) => value);
 	}
 
-	cars = shuffleArray(cars);
+	cars = shuffleArray(cars); //randomize the car orders
 	console.log("the sequence for cars is 👇👇");
 	cars.forEach((car) => console.log(car.name));
 	console.log("------------------- and the fun starts --------------------");
@@ -38,18 +44,19 @@ function rally() {
 	let playZone = new Array(stepNumbers).fill("*");
 	while (true) {
 		for (let i = 0; i < cars.length; i++) {
-			let move = Math.floor(Math.random() * 10) + 1;
+			let move = Math.floor(Math.random() * 10) + 1; //defines the move size
 
 			cars[i].position += move;
 			console.log(`${cars[i].name} should move ${move} box`);
 			if (cars[i].position > stepNumbers) {
+				//shows the car has reached the end
 				winners.push(cars[i].name);
 				playZone[cars[i].position - move] = "*";
 				console.log(`🎁 ${cars[i].name} Crossed the deadLine!`);
 				console.log(playZone);
 				cars.splice(i, 1);
 				if (winners.length === carNumbers) {
-					console.log(`the winner is "${winners[0]}" 🥇🥇🥇`);
+					console.log(`the winner is 🥇🏆🥇 ${winners[0]} 🥇🏆🥇`);
 					return;
 				}
 				continue;
@@ -62,14 +69,9 @@ function rally() {
 					break;
 				}
 			}
-
 			playZone[cars[i].position] = cars[i].name;
 			playZone[cars[i].position - move] = "*";
 			console.log(playZone);
 		}
 	}
-	console.log("");
-	console.log(`eventually the winner is ${winners[0]}`);
 }
-
-// rally();
