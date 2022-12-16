@@ -49,7 +49,7 @@ function rally() {
 				console.log(playZone);
 				cars.splice(i, 1);
 				if (winners.length === carNumbers) {
-					console.log(`the winner is ${winners[0]} 🥇🥇🥇`);
+					console.log(`the winner is "${winners[0]}" 🥇🥇🥇`);
 					return;
 				}
 				continue;
