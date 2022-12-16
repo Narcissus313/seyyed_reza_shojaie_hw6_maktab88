@@ -33,15 +33,15 @@ function rally() {
 	console.log("------------------- and the fun starts --------------------");
 
 	let winners = [];
-
-	let playZone = new Array(20).fill("*");
-	for (let j = 0; j < 50; j++) {
+	let stepNumbers = 20;
+	let playZone = new Array(stepNumbers).fill("*");
+	while (true) {
 		for (let i = 0; i < cars.length; i++) {
 			let move = Math.floor(Math.random() * 10) + 1;
 
 			cars[i].position += move;
 			console.log(`${cars[i].name} should move ${move} box`);
-			if (cars[i].position > 20) {
+			if (cars[i].position > stepNumbers) {
 				winners.push(cars[i].name);
 				playZone[cars[i].position - move] = "*";
 				console.log(`🎁 ${cars[i].name} Crossed the deadLine!`);
